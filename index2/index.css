@@ -1,35 +1,24 @@
 html, body {
    height: 100%;
+   width:100%;
    margin: 0;
    padding: 0;
+}
+.page{
+   position:relative;
+   height: 100%;
+   width: 100%;
+   display: block;
+   float: left;
 }
 ::-webkit-scrollbar { 
    display: none; 
 }
-div.page1 {
-   position: relative;
-   width: 100%;
-   height: 100%;
-}
-div.page2 {
-   position: relative;
-   width: 100%;
-   height: 100%;
-}
-div.page3 {
-   position: relative;
-   width: 100%;
-   height: 100%;
-}
-div.page4 {
-   position: relative;
-   width: 100%;
-   height: 100%;
-}
+
 div h1 {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 48%;
     z-index: 2;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -51,7 +40,7 @@ div h1 {
  }
 .down a {
    position: absolute;
-   bottom: 10%;
+   bottom: 3%;
    left: 48%;
    z-index: 2;
    display: inline-block;
@@ -60,6 +49,7 @@ div h1 {
    letter-spacing: .1em;
    transition: opacity .3s;
 }
+ 
 .right a {
    position: absolute;
    bottom: 40%;
@@ -71,9 +61,47 @@ div h1 {
    letter-spacing: .1em;
    transition: opacity .3s;
 }
-.page1 { background: url(1.jpg) center center / cover no-repeat;} 
-.page2 { background: url(1.jpg) center center / cover no-repeat;} 
-.page3 { background: url(1.jpg) center center / cover no-repeat;} 
-.page5 { background: url(1.jpg) center center / cover no-repeat;} 
+.up a {
+   position: absolute;
+   bottom: 97%;
+   left: 48%;
+   z-index: 2;
+   display: inline-block;
+   color: #fff;
+   font : 20px'Microsoft JhengHei';
+   letter-spacing: .1em;
+   transition: opacity .3s;
+}
+.page a {
+   padding-top: 60px;
+ }
+.down span {
+   position: absolute;
+   top: 0;
+   left: 48%;
+   width: 24px;
+   height: 24px;
+   margin-left: -12px;
+   border-left: 4px solid #fff;
+   border-bottom: 4px solid #fff;
+   -webkit-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   box-sizing: border-box;
+ }
+
+ 
+#page1 {
+   background-color: rgb(214, 188, 148);
+} 
+#page2 { 
+   background-color: rgb(152, 148, 214);
+} 
+#page3 { 
+   background-color: rgb(150, 211, 142);   
+} 
+#page4 { 
+   background-color: rgb(214, 188, 148);
+} 
+
   
   
