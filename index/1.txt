@@ -1,20 +1,3 @@
-html, body {
-   height: 100%;
-   width:100%;
-   margin: 0;
-   padding: 0;
-}
-.page{
-   position:relative;
-   height: 100%;
-   width: 100%;
-   display: block;
-   float: left;
-}
-::-webkit-scrollbar { 
-   display: none; 
-}
-
 div h1 {
     position: absolute;
     top: 50%;
@@ -25,7 +8,6 @@ div h1 {
     color: #fff;
     font : normal 300 64px/1 'Josefin Sans', sans-serif;
     text-align: center;
-    white-space: nowrap;
 }
 .left a {
    position: absolute;
@@ -88,20 +70,3 @@ div h1 {
    transform: rotate(-45deg);
    box-sizing: border-box;
  }
-
- 
-#page1 {
-   background-color: rgb(214, 188, 148);
-} 
-#page2 { 
-   background-color: rgb(152, 148, 214);
-} 
-#page3 { 
-   background-color: rgb(150, 211, 142);   
-} 
-#page4 { 
-   background-color: rgb(214, 188, 148);
-} 
-
-  
-  

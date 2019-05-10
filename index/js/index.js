@@ -1,7 +1,12 @@
 $(function() {
-    $('a[href*=#]').on('click', function(e) {
+    $('.left a,.right a').on('click', function(e) {
       e.preventDefault();
-      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+      $('html, body').animate({ scrollLeft: $($(this).attr('href')).offset().left}, 500, 'linear');
     });
   });
-  
+$(function() {
+  $('.up a,.down a').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
