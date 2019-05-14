@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
 html {
    height: 100%;
    width: 200%;
+   overflow: hidden;
    margin: 0;   
 }
 body{
@@ -79,7 +83,25 @@ body{
    text-align: center;
 }
 
+.p2b{
+  height:10%;
+  margin: 0;
+  padding: 0;
+  border: 10px;
+  width:25%;
+  float:left;
+  outline: none;
+}
+.p2b:hover{
+  background-color: #777;
+}
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="p2b"] {
+    width: 100%;
+  }
+}
 
 
 
@@ -200,21 +222,21 @@ body{
    position: absolute;
    width: 24px;
    height: 24px;
-   margin-left: -12px;
-   border-left: 2px solid #fff;
+   margin-right: -12px;
+   border-right:  2px solid #fff;
    border-bottom: 2px solid #fff;
-   transform: rotate(225deg);
+   transform: rotate(315deg);
    animation: right1 4s infinite;
  }
  @keyframes right1 {
    0% {
-     transform: rotate(225deg) translate(0, 0);
+     transform: rotate(315deg) translate(0, 0);
    }
    50% {
-     transform: rotate(225deg) translate(20px, -20px);
+     transform: rotate(315deg) translate(20px, 20px);
    }
    100% {
-     transform: rotate(225deg) translate(0, 0);
+     transform: rotate(315deg) translate(0, 0);
    }
  }
  
