@@ -4,13 +4,13 @@
 html {
    height: 100%;
    width: 200%;
-   overflow: hidden;
+  
    margin: 0;   
 }
 body{
    height: 100%;
    margin: 0; 
-   overflow: hidden;
+  
   
 }
 .page{
@@ -19,9 +19,7 @@ body{
    width: 50%;
    position: relative;
 }
-::-webkit-scrollbar { 
-   display: none; 
-}
+
 
 
 #page1 h1 {
@@ -293,12 +291,14 @@ body{
 } 
 #page2 { 
    background-color: rgb(152, 148, 214);
+   
 } 
 #page3 { 
    background-color: rgb(150, 211, 142); 
 } 
 #page4 { 
    background-color: rgb(214, 188, 148);
+  
 } 
 
   
