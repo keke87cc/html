@@ -28,7 +28,6 @@ body{
    left: 50%;
    transform: translate(-50%, -50%);
    color: #fff;
-   font : normal 300 64px/1 'Josefin Sans', sans-serif;
    text-align: center;
 }
 .part1{
@@ -46,7 +45,6 @@ body{
    left: 50%;
    transform: translate(-50%, -50%);
    color: #fff;
-   font : 64px  sans-serif;
    text-align: center;
 }
 
@@ -56,7 +54,6 @@ body{
    left: 50%;
    transform: translate(-50%, -50%);
    color: #fff;
-   font :64px  sans-serif;
    text-align: center;
 }
 
@@ -67,7 +64,6 @@ body{
    left: 50%;
    transform: translate(-50%, -50%);
    color: #fff;
-   font : 64px  sans-serif;
    text-align: center;
 }
 
@@ -77,7 +73,6 @@ body{
    left: 50%;
    transform: translate(-50%, -50%);
    color: #fff;
-   font :64px  sans-serif;
    text-align: center;
 }
 
@@ -98,9 +93,19 @@ body{
   /* For mobile phones: */
   [class*="p2b"] {
     width: 100%;
+    height: 8%;
   }
 }
-
+@media screen and (max-width: 834px) {
+  div.page {
+    font-size: 20px ;
+  }
+}
+@media only screen and (min-width: 835px) {
+  div.page {
+    font-size: 40px ;
+  }
+}
 
 
 
