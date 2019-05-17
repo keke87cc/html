@@ -3,12 +3,8 @@
 }
 html {
    height: 100%;
-<<<<<<< HEAD
    width: 100%;
-=======
-   width: 200%;
-  
->>>>>>> 429800a475e0ce5bafe763c5d74d504b12d6c787
+   width: 100%;
    margin: 0;   
 }
 body{
@@ -19,7 +15,6 @@ body{
   
 }
 .row1{
-  background-color: black;
   height: 100%;
   width: 200%;
 }
@@ -34,8 +29,6 @@ body{
    width: 50%;
    position: relative;
 }
-
-
 
 #page1 h1 {
    position: absolute;
