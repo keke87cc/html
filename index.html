@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
@@ -8,62 +9,66 @@
     <link rel="stylesheet" href="index.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/index.js"></script>
-    
+
 </head>
+
 <body>
-<div class="row1">
-   <div class="page" id="page1">
-      <h1>淡江大學<br>潘孟鉉教授</h1>
-      <div class="right">
-            <a href="#page2"><span></span></a> 
-      </div>
-      <div class="down">
-         <a href="#page3"><span></span></a> 
-      </div>
-      <div class="part1">
-         <h2>
-            資<br>
-            訊<br>
-            工<br>
-            程<br>
-         </h2>
-      </div>    
-   </div>
+    <div class="row1">
+        <div class="Home" id="page">
+            <h1>潘孟鉉<br>個人實驗室</h1>
+            <div class="right">
+                <a href=".Members"><span></span></a>
+            </div>
+            <div class="down">
+                <a href=".Advisor" onclick="addpage(3)"><span></span></a>
+            </div>
+            <div class="part1">
+                <h2>
+                    資
+                    <br> 訊
+                    <br> 工
+                    <br> 程
+                    <br>
+                </h2>
+            </div>
+        </div>
 
-   <div class="page" id="page2">
-      <h1>Teacher</h1>
-      <div class="left">
-         <a href="#page1"><span></span></a>
-      </div>  
-      <div class="down">
-         <a href="#page4"><span></span></a> 
-      </div>
-      <button class="p2b">1</button>
-      <button class="p2b">2</button>
-      <button class="p2b">3</button>
-      <button class="p2b">4</button>
-   </div>
-</div>
-<div class="row2">   
-   <div class="page" id="page3">
-      <h1>News</h1>
-      <div class="up">
-         <a href="#page1"><span></span></a>
-      </div>  
-      <div class="right">
-         <a href="#page4"><span></span></a> 
-      </div>   
-   </div>
+        <div class="Members" id="page">
+            <h1>Teacher</h1>
+            <div class="left">
+                <a href=".Home"><span></span></a>
+            </div>
+            <div class="down">
+                <a href=".GroupAwards"><span></span></a>
+            </div>
+            <button class="p2b">1</button>
+            <button class="p2b">2</button>
+            <button class="p2b">3</button>
+            <button class="p2b">4</button>
+        </div>
+    </div>
+    <div class="row2">
+        <div class="Advisor" id="page">
+            <h1>News</h1>
+            <div class="up">
+                <a href=".Home"><span></span></a>
+            </div>
+            <div class="right">
+                <a href=".GroupAwards"><span></span></a>
+            </div>
+        </div>
 
-   <div class="page" id="page4">
-      <h1>Contact</h1>
-      <div class="up">
-         <a href="#page2"><span></span></a>
-      </div> 
-      <div class="left">
-         <a href="#page3"><span></span></a>
-      </div> 
-   </div>
-</div>
+        <div class="GroupAwards" id="page">
+            <h1>Contact</h1>
+            <div class="up">
+                <a href=".Members"><span></span></a>
+            </div>
+            <div class="left">
+                <a href=".Advisor"><span></span></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
