@@ -11,6 +11,7 @@ html {
     width: 100%;
     width: 100%;
     margin: 0;
+    scroll-behavior: auto;
 }
 
 body {
@@ -120,10 +121,13 @@ body {
     #page {
         font-size: 20px;
     }
-    *a {
+    body {
+        position: fixed;
+    }
+    #page a {
         display: none;
     }
-    *span {
+    div.part1 {
         display: none;
     }
 }
