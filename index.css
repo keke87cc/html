@@ -2,38 +2,28 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 html {
     height: 100%;
     width: 100%;
-    width: 100%;
     margin: 0;
-    scroll-behavior: auto;
 }
 
 body {
     height: 100%;
-    width: 100%;
+    width: 200%;
     margin: 0;
+    /* overflow: hidden; */
+}
+
+
+/* .Home {
     overflow: hidden;
-}
-
-.Home {
-    overflow: hidden;
-}
-
-.row1 {
-    height: 100%;
-    width: 200%;
-}
-
-.row2 {
-    height: 100%;
-    width: 200%;
-}
+} */
 
 
 /* .part2 {
@@ -77,9 +67,7 @@ body {
     color: black;
     text-align: left;
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
     font-weight: 400;
-    line-height: 1.56;
     padding-top: 16px;
 }
 
@@ -110,39 +98,49 @@ body {
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="p2b"] {
-        width: 100%;
-        height: 8%;
-    }
-}
-
-@media screen and (max-width: 834px) {
-    #page {
+@media screen and (max-width: 600px) {
+    .Home {
         font-size: 10px;
     }
+    .right {
+        display: none;
+    }
+    .left {
+        display: none;
+    }
+    .up {
+        display: none;
+    }
+    .down {
+        display: none;
+    }
     body {
-        position: fixed;
-    }
-    #page a {
-        display: none;
-    }
-    div.part1 {
-        display: none;
+        overflow: hidden;
     }
 }
 
-@media only screen and (min-width: 835px) {
-    #page {
-        font-size: 15px;
-    }
+.right {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
-@media only screen and (min-width: px) {
-    #page {
-        font-size: 15px;
-    }
+.left {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.top {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.down {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .left a {
@@ -154,13 +152,13 @@ body {
 
 .right a {
     position: absolute;
-    bottom: 50%;
+    top: 50%;
     left: 95%;
     transform: translate(-50%, -50%);
 }
 
 .down a {
-    position: absolute;
+    position: relative;
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -173,15 +171,11 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.page a {
-    padding-top: 30px;
-}
-
 .left span {
     position: absolute;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
     border-left: 2px solid black;
     border-bottom: 2px solid black;
     transform: rotate(45deg);
@@ -202,9 +196,9 @@ body {
 
 .right span {
     position: absolute;
-    width: 24px;
-    height: 24px;
-    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
     transform: rotate(315deg);
@@ -225,9 +219,9 @@ body {
 
 .down span {
     position: absolute;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
     border-left: 3px solid black;
     border-bottom: 3px solid black;
     transform: rotateZ(45deg);
@@ -250,14 +244,13 @@ body {
 
 .up span {
     position: absolute;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
     border-left: 3px solid black;
     border-bottom: 3px solid black;
     transform: rotateZ(135deg);
     animation: up 4s infinite;
-    box-sizing: border-box;
 }
 
 @keyframes up {
