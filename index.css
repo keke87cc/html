@@ -2,48 +2,27 @@
     box-sizing: border-box;
 }
 
-
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
+}
 
 html {
+    position: relative;
+    overflow: hidden;
     height: 100%;
     width: 100%;
     margin: 0;
-    background-image: url("image/iceMountain.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;     
 }
 
 body {
     width: 100%;
     height: 100%;
-    margin: 0;
-    overflow: hidden;
+    background-image: url("image/iceMountain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    opacity: 0.8;
 }
-
-
-/* .Home {
-    overflow: hidden;
-} */
-
-
-/* .part2 {
-    position: absolute;
-    width: 15%;
-    height: 100%;
-    background-color: #1fc8db;
-    background-image: linear-gradient(120deg, #9fb8ad 0%, #1fc8db 60%, #2cb5e8 75%);
-    text-align: center;
-    float: left;
-} */
-/* 
-.img2 {
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-} */
 
 .Home h1 {
     position: absolute;
@@ -76,7 +55,7 @@ body {
 
 .Members h1 {
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -122,15 +101,12 @@ body {
     }
 }
 
-
 .down a {
     position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 .down span {
     position: absolute;
@@ -156,12 +132,14 @@ body {
         opacity: 0;
     }
 }
+
 .up a {
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .up span {
     position: absolute;
     width: 20px;
@@ -199,7 +177,6 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
-   
 }
 
 .Advisor {
@@ -207,7 +184,6 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
-    
 }
 
 .GroupAwards {
@@ -215,21 +191,22 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
-   
 }
 
 .tab {
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    padding: 0%;
     width: 15%;
     height: 100%;
+    position: absolute;
 }
 
 .p2b {
     position: relative;
     display: block;
-    height: 20%;
+    height: 50%;
     margin: 0;
     padding: 0;
     border: 10px;
@@ -241,11 +218,111 @@ body {
     background-color: #777;
 }
 
+#Work {
+    position: relative;
+    height: 100%;
+    top: 25%;
+}
+
 .tabcontent3 {
-    top: 10%;
+    position: relative;
     float: left;
     padding: 0px 12px;
     width: 70%;
-    border-left: none;
     display: none;
+    font-size: 24px;
+}
+
+.Advisor #zzz {
+    position: absolute;
+    font-size: 80px;
+    height: 15%;
+    width: 15%;
+    cursor: pointer;
+}
+
+#Idk a {
+    text-decoration: none;
+    background-color: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.overbutton:hover,
+.overbutton:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overbutton {
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#Bio {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#Experience {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#Services {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#Timetable {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.info {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: 10%;
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    overflow: hidden;
 }
