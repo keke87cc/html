@@ -11,21 +11,21 @@
 
 <body>
     <div class="bar">
-        <div>小目錄</div>
-        <button><a href=".Home"></a>Home</button>
-        <button><a href=".Members"></a>Members</button>
-        <button id="More"><a href=".Advisor"></a>Advisor----></button>
-        <button><a href=".GroupAwards"></a>GroupAwards</button>
-        <button><a href=".Publication&Porjects&Course"></a>Publication<br>Porjects<br>Course</button>
-        <button><a href=".Contacts"></a>Contacts</button>
+        <div></div>
+        <a href="#Home"><button>Home</button></a>
+        <a href="#Members"><button>Members</button></a>
+        <a href="#Advisor"><button id="More" onclick="openPage('PAdivsor')">Advisor----></button></a>
+        <a href="#GroupAwards"><button>GroupAwards</button></a>
+        <a href="#Publication&Porjects&Course"><button>Publication<br>Porjects<br>Course</button></a>
+        <a href="#Contacts"><button>Contacts</button></a>
     </div>
     <div id="MoreOption" class="overlay">
-        <button id="Bio" class="morebutton">Bio</button>
-        <button id="Timetable" class="morebutton">Timetable</button>
-        <button id="Services" class="morebutton">Services</button>
-        <button id="Experience" class="morebutton">Experience</button>
+        <button id="Bio" class="morebutton" onclick="openPage('PBio')">Bio</button>
+        <button id="Timetable" class="morebutton" onclick="openPage('PTimetable')">Timetable</button>
+        <button id="Services" class="morebutton" onclick="openPage('PServices')">Services</button>
+        <button id="Experience" class="morebutton" onclick="openPage('PExperience')">Experience</button>
     </div>
-    <div class="Home " id="page ">
+    <div class="Home " id="Home">
         <div class="down ">
             <!-- <h1>
                 誠徵碩士研究生專題生<br> 研發成果展示影片
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="Members" id="page ">
+    <div class="Members" id="Members">
         <!-- <h1>碩士班 碩士在校生 徐武駿 (碩二) 藍志銘 (碩二) 麥紘維 (碩一) 卓傳衛 (碩一) 碩士畢業生 簡祥宸 (2018.6畢) 陳怡君 (2018.6畢)(五年一貫) (awarded) 黃典涵 (2017.6 畢) / 第一份工作: 王崇銘 (2017.6 畢) / 第一份工作: (awarded) 許瑞育 (2017.6 畢) / 第一份工作: (awarded) 李冠穎 (2016.6 畢) / 第一份工作: e7.net / 1篇國內會議論文 (awarded) 王敬言
             (2016.6 畢) / 第一份工作: / 1篇國際期刊論文 林言霈 (2015.6 畢) / 第一份工作: 訊真科技 / 1篇國際期刊論文 / 1篇國內會議論文 (awarded) 楊書瑋 (2015.6 畢) / 第一份工作: 精英 / 1篇國際期刊論文 / 1篇國內會議論文 呂子修 (2015.6 畢) / 第一份工作: 華冠 / 1篇國際期刊論文 / 1篇國內期刊論文 / 3篇國內會議論文 李奕勳 (2014.6 畢) / 第一份工作: 華冠/ 1篇國際期刊論文 /
             1篇國際會議論文 / 2篇國內會議論文 林學偉 (2014.6 畢) / 第一份工作: 宏達電 / 1篇國際期刊論文 / 3篇國內會議論文 (awarded) 劉炳麟 (2013.6 畢) / 第一份工作: 大聯大集團 / 2篇國際期刊論文 / 2篇國際會議論文 / 2篇國內會議論文 大學部專題生 2020 畢業 2019 畢業 2018 畢業 2017 畢業 林士彰 (科技部大專生計畫: 利用網路爬蟲與機器學習技術實做公益資訊整合平台), 楊智傑, 林益田, 林冠偉, 王承輝
@@ -58,39 +58,47 @@
 
 
 
-    <div class="Advisor" id="page">
-        <!-- <h1>指導教授 Adivsor</h1>
-        <h2>潘孟鉉 Meng-Shiuan Pan</h2>
-        <h3>
-            淡江大學 資訊工程系 副教授
-            <br>Associate Professor, Dept. CSIE, Tamkang University
-            <br>研究室: E659
-            <br>電話: 02-2621-5656 分機 3520
-            <br>Email: mspan at mail. tku. edu. tw
-            <br>科技部大專校院特殊優秀人才獎勵 (MOST Research Award), 2014, 2015, 2016, 2017, 2018
-            <br>淡江大學工學院優良導師, 2017
-            <br>Best conference paper award, IEEE International Conference on Applied System Innovation (ICASI), 2016. (link)
-            <br>淡江大學教學優良教師 (Tamkang Excellent Teaching Award), 2015.
-            <br>淡江大學傑出研究教師 (Tamkang Outstanding Research Award), 2015.
-            <br>淡江大學教師評鑑優等獎 (Tamkang Excellent Teacher Award), 2015.
-            <br>淡江大學研究獎勵 (Tamkang Research Award), 2013, 2014, 2015.
-            <br>淡江大學推廣專題研究成效卓越獎牌, 2014.
-            <br>淡江大學教學優良教材獎 (Tamkang Excellent Teaching Material Award), 2014.
-            <br>中華民國資訊學會 博士論文獎 佳作 (IICM Excellent Ph.D Thesis Award), 2008.
-            <br>交通大學 傑出教學助理 (NCTU Outstanding TA), 2007.
-            <br>交通大學資訊工程所 傑出研究獎 (NCTU CS Dept. Student Outstanding Research Award), 2006.
-            <br>入圍第四屆ACM MobiWAC國際會議最佳論文獎候選名單 (Best Paper Candidate of MobiWac Conference), 2006.
-            <br>清華大學通訊所甄試入學第一名, 2001.
-            <br>八十九學年度國科會大專學生參與專題研究計畫獎學金, “VoIP硬體平台之設計分析及效能評估”, 2000.
-        </h3> -->
+    <div class="Advisor" id="Advisor">
+        <div class="ex" id="PAdivsor">
+            <h1>指導教授 Adivsor</h1>
+            <h2>潘孟鉉 Meng-Shiuan Pan</h2>
+            <h3>
+                淡江大學 資訊工程系 副教授
+                <br>Associate Professor, Dept. CSIE, Tamkang University
+                <br>研究室: E659
+                <br>電話: 02-2621-5656 分機 3520
+                <br>Email: mspan at mail. tku. edu. tw
+                <br>科技部大專校院特殊優秀人才獎勵 (MOST Research Award), 2014, 2015, 2016, 2017, 2018
+                <br>淡江大學工學院優良導師, 2017
+                <br>Best conference paper award, IEEE International Conference on Applied System Innovation (ICASI), 2016. (link)
+                <br>淡江大學教學優良教師 (Tamkang Excellent Teaching Award), 2015.
+                <br>淡江大學傑出研究教師 (Tamkang Outstanding Research Award), 2015.
+                <br>淡江大學教師評鑑優等獎 (Tamkang Excellent Teacher Award), 2015.
+                <br>淡江大學研究獎勵 (Tamkang Research Award), 2013, 2014, 2015.
+                <br>淡江大學推廣專題研究成效卓越獎牌, 2014.
+                <br>淡江大學教學優良教材獎 (Tamkang Excellent Teaching Material Award), 2014.
+                <br>中華民國資訊學會 博士論文獎 佳作 (IICM Excellent Ph.D Thesis Award), 2008.
+                <br>交通大學 傑出教學助理 (NCTU Outstanding TA), 2007.
+                <br>交通大學資訊工程所 傑出研究獎 (NCTU CS Dept. Student Outstanding Research Award), 2006.
+                <br>入圍第四屆ACM MobiWAC國際會議最佳論文獎候選名單 (Best Paper Candidate of MobiWac Conference), 2006.
+                <br>清華大學通訊所甄試入學第一名, 2001.
+                <br>八十九學年度國科會大專學生參與專題研究計畫獎學金, “VoIP硬體平台之設計分析及效能評估”, 2000.
+            </h3>
 
-        <!-- 
-        <div class="info">
-            <div id="Bio">522</div>
-            <div id="Timetable">2525</div>
-            <div id="Services">2525</div>
-            <div id="Experience">2525</div>
-        </div> -->
+        </div>
+        <div class="ex" id="PBio">
+            <h1>111111111111</h1>
+        </div>
+        <div class="ex" id="PTimetable">
+            <h1>22222222</h1>
+        </div>
+        <div class="ex" id="PServices">
+            <h1>3333333</h1>
+        </div>
+        <div class="ex" id="PExperience">
+            <h1>444444444</h1>
+        </div>
+
         <div class="up ">
             <a href=".Members "><span></span></a>
         </div>
@@ -98,7 +106,7 @@
             <a href=".GroupAwards "><span></span></a>
         </div>
     </div>
-    <div class=" GroupAwards " id="page ">
+    <div class=" GroupAwards " id="GroupAwards">
         <div class="up ">
             <a href=".Advisor "><span></span></a>
         </div>

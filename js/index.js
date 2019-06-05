@@ -16,7 +16,7 @@ window.onresize = function() {
     var zoom = window.devicePixelRatio;
     document.body.style.zoom = (100 / zoom) + "%";
 }
-$('.up a,.down a,.bar a').on('click', function(e) {
+$('.up a,.down a,button a').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 800, 'swing');
 });
@@ -28,11 +28,12 @@ $(document).ready(function() {
         document.getElementById("MoreOption").style.width = "0%";
     });
 });
-// function openPage(pageName) {
-//     var i, tabcontent;
-//     tabcontent = document.getElementsByClassName("tabcontent3");
-//     for (i = 0; i < tabcontent.length; i++) {
-//         tabcontent[i].style.display = "none";
-//     }
-//     document.getElementById(pageName).style.display = "block";
-// }
+
+function openPage(Name) {
+    var i, tabcontent;
+    tabcontent = document.getElementsByClassName("ex");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    document.getElementById(Name).style.display = "block";
+}
