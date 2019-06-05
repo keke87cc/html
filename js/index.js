@@ -8,15 +8,26 @@ $(document).keydown(function(e) {
     // 61 Plus key  +/= key
 });
 
+// window.onresize = function() {
+//     var zoom = window.devicePixelRatio;
+//     document.body.style.zoom="100%";
+// }
 window.onresize = function() {
     var zoom = window.devicePixelRatio;
-    document.body.style.zoom="100%";
+    document.body.style.zoom = (100 / zoom) + "%";
 }
 $('.up a,.down a,.bar a').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 800, 'swing');
 });
 
+$(document).ready(function() {
+    $("#More,#MoreOption").hover(function() {
+        document.getElementById("MoreOption").style.width = "10%";
+    }, function() {
+        document.getElementById("MoreOption").style.width = "0%";
+    });
+});
 // function openPage(pageName) {
 //     var i, tabcontent;
 //     tabcontent = document.getElementsByClassName("tabcontent3");
@@ -25,12 +36,3 @@ $('.up a,.down a,.bar a').on('click', function(e) {
 //     }
 //     document.getElementById(pageName).style.display = "block";
 // }
-document.getElementById("DFO").click();
-
-function openNav() {
-    document.getElementById("Idk").style.width = "50%";
-}
-
-function closeNav() {
-    document.getElementById("Idk").style.width = "0%";
-}
