@@ -111,28 +111,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .Home {
-        font-size: 10px;
-    }
-
-    .right {
-        display: none;
-    }
-
-    .left {
-        display: none;
-    }
-
-    .up {
-        display: none;
-    }
-
-    .down {
-        display: none;
-    }
-
-    body {
-        overflow: hidden;
-    }
+        font-size:5px;
 }
 
 .down a {
