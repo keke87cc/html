@@ -2,8 +2,11 @@
     display: none;
 } */
 
+* {
+    box-sizing: border-box;
+}
+
 html {
-    position: relative;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -12,145 +15,158 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url("image/4.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    /* overflow: hidden; */
+    margin: 0;
+}
+
+header .part {
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0.8;
+    background-color: white;
+    transition: all 0.8s cubic-bezier(0.5, 0.1, 0.3, 1);
+}
+
+header .part.left {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+header .part.right {
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+header.open .part.left {
+    clip-path: polygon(0 0, 0 100%, 0 100%);
+}
+
+header.open .part.right {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%);
+}
+
+header.open .part.right {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%);
+}
+
+.nav {
+    float: left;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mainroadLine {
+    display: block;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    height: 30vh;
+    width: 100vw;
+    margin-bottom: 4%;
+    z-index: 2;
+}
+
+#mainroadLine p {
+    text-align: center;
+    font-size: 80px;
+}
+
+.mainBlock {
+    display: block;
+    float: left;
+    height: 15vh;
+    width: 100vw;
+    background-color: black;
+    margin-bottom: 4%;
+}
+
+.mainBlock button {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+    display: block;
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* 
+#character {
+    top: 3%;
+    left: 55%;
+    position: absolute;
+    z-index: 1;
+} */
+
+.title {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 60%;
 }
 
 h1 {
     position: relative;
-    left: 20%;
-    color: black;
+    color: white;
     text-align: left;
     display: block;
+    font-size: 50px;
 }
 
 h2 {
     position: relative;
-    left: 20%;
-    color: black;
+    color: white;
     text-align: left;
     display: block;
+    font-size: 40px;
+    /* -webkit-column-count: 3; */
 }
 
 h3 {
     position: relative;
-    left: 20%;
-    color: black;
+    ;
+    color: white;
     text-align: left;
     display: block;
+    font-size: 25px;
 }
 
-.bar {
-    top: 0%;
-    left: 0%;
-    position: fixed;
-    height: 100%;
-    width: 10%;
-    z-index: 4;
-    text-align: center;
-}
-
-.bar div {
-    height: 20%;
-    width: 100%;
-}
-
-
-/* <a href=".Home">
-            <p>Home</p>
-        </a>
-        <a href=".Members">
-            <p>Members</p>
-        </a>
-        <a href=".Advisor">
-            <p id=More>Advisor----></p>
-        </a>
-        <a href=".GroupAwards">
-            <p>GroupAwards</p>
-        </a>
-        <a href=".Publication&Porjects&Course">
-            <p>Publication<br>Porjects<br>Course</p>
-        </a>
-        <a href=".Contacts">
-            <p>Contacts</p>
-        </a> */
-
-.bar button {
+#Advisor {
     position: relative;
-    color: gray;
-    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+#Contact {
     float: left;
+    height: 100%;
+    position: relative;
     width: 100%;
-    height: 10%;
-    transition: 1000ms ease all;
-    text-decoration: none;
 }
 
-.bar button:hover {
-    background: #fff;
-    color: rgb(25, 211, 167);
-}
-
-.bar button:hover:before,
-.bar a:hover:after {
-    width: 100%;
-    transition: 1000ms ease all;
-}
-
-.bar button:before,
-.bar button:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 2px;
-    width: 0;
-    background: #1AAB8A;
-    transition: 500ms ease all;
-}
-
-.overlay {
-    height: 40%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 40%;
-    left: 10%;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.morebutton:hover,
-.morebutton:focus {
-    color: #f1f1f1;
-}
-
-.morebutton {
-    width: 100%;
-    height: 25%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #818181;
-    display: block;
+#Project {
     float: left;
-    transition: 0.3s;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-@media screen and (max-width: 600px) {
-    .Home {
-        font-size: 5px;
-    }
+#Members {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .down a {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -194,8 +210,8 @@ h3 {
     width: 20px;
     height: 20px;
     margin-left: -10px;
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
     transform: rotateZ(135deg);
     animation: up 4s infinite;
 }
@@ -214,64 +230,63 @@ h3 {
     }
 }
 
-#PAdvisor {
-    position: absolute;
-    height: 100%;
-    width: 50%;
+.back button {
+    z-index: 2;
+    position: fixed;
+    top: 40%;
+    right: 0%;
+    color: gray;
+    display: block;
+    float: left;
+    width: 10%;
+    height: 10%;
+    clip-path: circle(30%);
+    transition: 1000ms ease all;
+    cursor: pointer;
 }
 
-#PBio {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    display: none;
+.back button:hover {
+    background: #fff;
+    color: rgb(25, 211, 167);
 }
 
-#PExperience {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    display: none;
-}
-
-#PServices {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    display: none;
-}
-
-#PTimetable {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    display: none;
-}
-
-.Home {
+.Page1 {
+    position: relative;
     float: left;
     height: 100vh;
     width: 100vw;
-    position: relative;
+    background-image: url("image/4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: fade-out;
+    animation-duration: 2s;
 }
 
-.Members {
+.Page2 {
+    position: relative;
     float: left;
     height: 100vh;
     width: 100vw;
-    position: relative;
+    background-image: url("image/4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-.Advisor {
+.Page3 {
+    position: relative;
     float: left;
     height: 100vh;
     width: 100vw;
-    position: relative;
+    background-image: url("image/4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-.GroupAwards {
-    float: left;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+@keyframes fade-out {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
