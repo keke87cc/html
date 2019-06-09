@@ -120,7 +120,7 @@ header.open .part.right {
     float: left;
     top: 10vh;
     left: 10vw;
-    width: 50vw;
+    width: 45vw;
 }
 
 .title3 {
@@ -164,7 +164,7 @@ h3 {
     width: 100vw;
 }
 
-#Contact {
+#Award {
     display: none;
     float: left;
     height: 100vh;
@@ -340,6 +340,30 @@ h3 {
 .Page6 {
     animation-duration: 2s;
     animation-name: fade-out;
+    position: relative;
+    float: left;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("image/4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: auto;
+}
+
+.Page7 {
+    animation-duration: 2s;
+    animation-name: fade-out;
+    position: relative;
+    float: left;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("image/4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: auto;
+}
+
+.Page8 {
     position: relative;
     float: left;
     height: 100vh;
