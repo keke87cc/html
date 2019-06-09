@@ -48,9 +48,6 @@ header.open .part.right {
     clip-path: polygon(100% 0, 100% 0, 100% 100%);
 }
 
-header.open .part.right {
-    clip-path: polygon(100% 0, 100% 0, 100% 100%);
-}
 
 .nav {
     float: left;
@@ -263,7 +260,7 @@ h3 {
 .back button {
     z-index: 2;
     position: fixed;
-    top: 40vh;
+    top: 20vh;
     right: 0%;
     color: gray;
     display: block;
@@ -399,5 +396,9 @@ h3 {
     }
     h3 {
         font-size: 15px;
+    }
+    .back button {
+        width: 20vw;
+        height: 20vh;
     }
 }
