@@ -120,7 +120,7 @@ header.open .part.right {
     float: left;
     top: 10vh;
     left: 10vw;
-    width: 40vw;
+    width: 50vw;
 }
 
 .title3 {
@@ -310,6 +310,7 @@ h3 {
     background-image: url("image/4.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    overflow: auto;
 }
 
 .Page4 {
@@ -322,6 +323,7 @@ h3 {
     background-image: url("image/4.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    overflow: auto;
 }
 
 .Page5 {
@@ -336,6 +338,8 @@ h3 {
 }
 
 .Page6 {
+    animation-duration: 2s;
+    animation-name: fade-out;
     position: relative;
     float: left;
     height: 100vh;
