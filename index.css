@@ -124,7 +124,15 @@ header.open .part.right {
 .title2 {
     position: relative;
     float: left;
-    top: 10vh;
+    top: 5vh;
+    left: 10vw;
+    width: 45vw;
+}
+
+.title4 {
+    position: relative;
+    top: 5vh;
+    float: left;
     left: 10vw;
     width: 45vw;
 }
@@ -203,7 +211,7 @@ h3 {
 }
 
 .down a {
-    position: absolute;
+    position: fixed;
     bottom: 15vh;
     left: 50vw;
     transform: translate(-50%, -50%);
@@ -217,7 +225,7 @@ h3 {
 }
 
 p {
-    transform: translateY(-50%);
+    transform: translateY(-30%);
 }
 
 .down span {
@@ -247,7 +255,7 @@ p {
 
 .up a {
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: 10vh;
     left: 50vw;
     transform: translate(-50%, -50%);
