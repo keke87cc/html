@@ -136,9 +136,6 @@ h1 {
     display: block;
     font-size: 50px;
 }
-h1 .center{
-    text-indent: 60px;
-}
 
 h2 {
     position: relative;
@@ -165,7 +162,7 @@ h3 {
     width: 100vw;
 }
 
-#Award {
+#Course {
     display: none;
     float: left;
     height: 100vh;
@@ -254,7 +251,7 @@ h3 {
     transform: rotateZ(135deg);
     animation: up 4s infinite;
 }
-.card-container .article {
+.card .article {
     background: #0081fa;
     color:black;
     padding: 20px;
