@@ -117,7 +117,7 @@ header.open .part.right {
     top: 10vh;
     left: 5vw;
     width: 40vw;
-    height: 90vh;
+    height: 100vh;
     float: left;
 }
 
@@ -450,6 +450,32 @@ li {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    #mainroadLine p {
+        text-align: center;
+        font-size: 50px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .back button {
+        width: 15vw;
+        height: 20vh;
+    }
+    li {
+        font-size: 25px;
+    }
+    .mainBlock button {
+        font-size: 20px;
     }
 }
 
