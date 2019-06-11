@@ -29,7 +29,9 @@ header .part {
     height: 100%;
     opacity: 0.8;
     background-color: white;
-    transition: all 0.8s cubic-bezier(0.5, 0.1, 0.3, 1);
+    /* 漸變樣式 動畫時間 延遲時間  */
+    transition: all 0.8s cubic-bezier(0.8, 0.1, 0.3, 1);
+    -webkit-transition: all 0.8s cubic-bezier(0.8, 0.1, 0.3, 1);
 }
 
 header .part.left {
@@ -320,7 +322,7 @@ li {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     animation-name: fade-out;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .Page2 {
@@ -351,7 +353,7 @@ li {
     height: 100vh;
     width: 100vw;
     animation-name: fade-out;
-    animation-duration: 2s;
+    animation-duration: 1s;
     background-image: url("image/4.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -370,7 +372,7 @@ li {
 }
 
 .Page6 {
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: fade-out;
     position: relative;
     float: left;
@@ -383,7 +385,7 @@ li {
 }
 
 .Page7 {
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: fade-out;
     position: relative;
     float: left;
@@ -396,7 +398,7 @@ li {
 }
 
 .Page8 {
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: fade-out;
     position: relative;
     float: left;
@@ -409,7 +411,7 @@ li {
 }
 
 .Page9 {
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: fade-out;
     position: relative;
     float: left;
@@ -422,7 +424,7 @@ li {
 }
 
 .Page10 {
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: fade-out;
     position: relative;
     float: left;
